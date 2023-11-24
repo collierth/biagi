@@ -1,0 +1,118 @@
+
+.c-outer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--logo-font);
+    font-weight: 200;
+    font-size: 350px;
+}
+.c-container {
+    display: flex;
+    padding: 3rem;
+    gap: 4em;
+    
+}
+
+.c-newsletter {
+    flex: .30;
+    display: flex;
+    flex-direction: column;
+    margin-right: 48px;
+}
+
+.c-field {
+    width: 100%;
+    display: flex;
+}
+
+.c-field input {
+    background-color: transparent;
+    width: 100%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.c-field::placeholder {
+    color: red;
+}
+
+.c-field button {
+    background-color: transparent;
+}
+
+.c-field button i {
+    font-size: 40px;
+}
+
+.c-terms {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+}
+
+#check {
+    height: 32px;
+    width: 32px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.c-terms label {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.c-socials {
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.c-socials i {
+    margin-right: 24px;
+}
+
+.c-lists {
+    flex: .7;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.c-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-heading {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgb(144, 144, 144);
+}
+
+.c-column-list {
+    margin-top: 24px;
+}
+
+.c-list-item {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    cursor: pointer;
+}

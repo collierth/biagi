@@ -1,0 +1,83 @@
+.n-container {
+    height: 12.5vh;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    transition: .5s all ease;
+    border-style: solid;
+    border-width: 1px;
+    border-top : none;
+    border-left: none;
+    border-right: none;
+    border-color: transparent;
+}
+
+.n-container-color {
+    background-color: white;
+    color: black;
+    border-color: lightgray;
+}
+
+.n-container:hover {
+    background-color: white;
+    color: black;
+    border-color: lightgray;
+}
+
+.n-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.n-left {
+    flex: .33;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.n-group {
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.n-group i {
+    margin-right: 16px;
+}
+
+.n-mid {
+    flex: .34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.n-mid span {
+    font-size: 40px;
+    font-family: var(--logo-font);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.n-right {
+    flex: .33;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.n-right i {
+    font-size: 20px;
+    cursor: pointer;
+}
