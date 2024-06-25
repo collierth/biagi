@@ -1,16 +1,24 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
-import Intro from './components/intro/Intro';
-import Test from './components/test/Test';
-import Columns from './components/columns/Columns';
+import Footer from './components/footer/Footer';
+import Home from './pages/Home';
+import Women from './pages/Women';
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Intro/>
-      <Columns/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/women" element={<Women/>}/>
+        </Routes>
+        <Footer/>
+        </div>
+    </Router>
+    
   );
 }
 
